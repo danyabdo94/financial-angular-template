@@ -10,13 +10,15 @@ import { MaterialModule } from "./material.module";
 import { FormsModule } from "@angular/forms";
 import { HomeComponent } from "./components/home/home.component";
 import { DashboardComponent } from "./components/dashboard/dashboard.component";
+import { SalesStatisticsComponent } from "./components/sales-statistics/sales-statistics.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
-    DashboardComponent
+    DashboardComponent,
+    SalesStatisticsComponent
   ],
   imports: [
     BrowserModule,

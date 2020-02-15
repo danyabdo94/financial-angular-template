@@ -1,0 +1,39 @@
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.sidenav {
+  background: #174A84;
+  padding: 0;
+}
+
+.sidenav-content {
+  padding: 10px;
+}
+
+.sideNavButton,
+.sideNavButton a {
+  width: 100%;
+  text-align: left;
+  padding: 0;
+  margin-bottom: 1%;
+  background-color: #E6E6E6;
+  font-size: 1.2rem;
+}
+
+.sideNavCollapse,
+.sideNavCollapse a {
+  width: 100%;
+  text-align: left;
+  padding: 0;
+  margin-bottom: 1%;
+  font-size: 1.2rem;
+}
+
+.sideNavButton a,
+.sideNavButton span,
+.sideNavCollapse a,
+.sideNavCollapse span {
+  padding-left: 5%;
+}

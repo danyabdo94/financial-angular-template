@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { User } from "src/app/models/user";
 
 @Component({
   selector: "app-home",
@@ -6,8 +7,11 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./home.component.scss"]
 })
 export class HomeComponent implements OnInit {
-  constructor() {
-  }
+  user: User = new User(1, "Scranton, PA");
+  isNavOpen = true;
+  constructor() {}
 
   ngOnInit(): void {}
+
+  logout() {}
 }

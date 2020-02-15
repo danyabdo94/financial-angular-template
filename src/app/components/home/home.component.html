@@ -1,1 +1,55 @@
-<router-outlet></router-outlet>
+<mat-drawer-container class="container" fxLayout="row" autosize>
+  <mat-drawer
+    #drawer
+    class="sidenav"
+    [opened]="isNavOpen"
+    mode="side"
+    fxFlex="15"
+  >
+    <div fxLayout="row" fxLayoutAlign="space-around center">
+      <div fxFlex="80">
+        <img src="assets/logo-blue.PNG" class="fullWidth" alt="logo" />
+      </div>
+    </div>
+  </mat-drawer>
+
+  <div
+    fxLayout="row"
+    fxLayoutAlign="space-between center"
+    fxFlex="85"
+    style="border-bottom: black solid 1px;"
+  >
+    <div fxFlex="20">
+      <button type="button" mat-button (click)="isNavOpen = !isNavOpen">
+        <i class="material-icons" *ngIf="isNavOpen">
+          menu_open
+        </i>
+        <i class="material-icons" *ngIf="!isNavOpen">
+          menu
+        </i>
+      </button>
+    </div>
+
+    <div fxFlex="70" style="text-align: right;">
+      <h3 class="noPaddingMargin1">{{ user.name }}</h3>
+    </div>
+
+    <div fxFlex="5" style="padding-right: 5px;">
+      <button
+        type="button"
+        mat-mini-fab
+        style="float: right;"
+        (click)="logout()"
+      >
+        <i class="material-icons">
+          power_settings_new
+        </i>
+      </button>
+    </div>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="space-around center" style="margin: 1%;">
+    <div fxFlex="98">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</mat-drawer-container>
