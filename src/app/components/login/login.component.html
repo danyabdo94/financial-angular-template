@@ -1,6 +1,85 @@
 <div fxLayout="row" class="fullPage" fxLayoutAlign="start start">
-  <div fxFlex="33"></div>
-  <div fxFlex="67">
+  <div fxFlex="35" class="centered">
+    <div fxLayout="row" fxLayoutAlign="space-around center">
+      <div fxFlex="80">
+        <img src="assets/logo2.PNG" class="imageFullWidth" alt="logo" />
+      </div>
+    </div>
+
+    <div
+      fxLayout="row"
+      fxLayoutAlign="space-around center"
+      style="margin-right: -10%;"
+    >
+      <div fxFlex="80">
+        <p class="loginHeader">
+          <b>
+            Welcome to Financial Platform
+          </b>
+        </p>
+        <p>
+          <mat-hint
+            >Welcome to Dashboard, please enter your email and
+            password!</mat-hint
+          >
+        </p>
+      </div>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="space-around center">
+      <div fxFlex="60">
+        <mat-form-field appearance="standard" class="fullWidth borderCircle">
+          <input
+            type="email"
+            color="accent"
+            name="email"
+            [(ngModel)]="email"
+            matInput
+            placeholder="Email"
+          />
+          <mat-icon matSuffix color="accent">email</mat-icon>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="space-around center">
+      <div fxFlex="60">
+        <mat-form-field appearance="standard" class="fullWidth borderCircle">
+          <input
+            type="password"
+            name="Password"
+            [(ngModel)]="password"
+            matInput
+            color="accent"
+            placeholder="Password"
+          />
+          <mat-icon matSuffix color="accent">lock_open</mat-icon>
+        </mat-form-field>
+      </div>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-around center">
+      <div fxFlex="60">
+        <mat-radio-group [(ngModel)]="remember">
+          <mat-radio-button [value]="1" color="accent"
+            >Remember me</mat-radio-button
+          >
+        </mat-radio-group>
+      </div>
+    </div>
+    <div
+      fxLayout="row"
+      fxLayoutAlign="space-around center"
+      style="margin-top: 1%;"
+    >
+      <div fxFlex="60">
+        <button mat-button mat-raised-button class="fullWidth" style="color: white;" color="accent">
+          Login
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div fxFlex="65">
     <img src="assets/login.png" class="imageFullWidth" alt="login" />
   </div>
 </div>
