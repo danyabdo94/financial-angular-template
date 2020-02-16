@@ -7,8 +7,24 @@
     fxFlex="15"
   >
     <div fxLayout="row" fxLayoutAlign="space-around center">
-      <div fxFlex="80">
+      <div fxFlex="100">
         <img src="assets/logo-blue.PNG" class="fullWidth" alt="logo" />
+      </div>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-around center">
+      <div fxFlex="100">
+        <button
+          mat-button
+          type="button"
+          class="fullWidth"
+          (click)="navigate('dashboard')"
+          color="accent"
+        >
+          <i class="material-icons" >
+            dashboard
+          </i>
+          <span class="paddL10">Dashboard</span>
+        </button>
       </div>
     </div>
   </mat-drawer>

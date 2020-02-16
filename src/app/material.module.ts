@@ -7,6 +7,7 @@ import { MatRadioModule } from "@angular/material/radio";
 import { MatButtonModule } from "@angular/material/button";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatCardModule } from "@angular/material/card";
+import { MatChipsModule } from "@angular/material/chips";
 
 @NgModule({
   declarations: [],
@@ -19,6 +20,7 @@ import { MatCardModule } from "@angular/material/card";
     MatButtonModule,
     MatSidenavModule,
     MatCardModule,
+    MatChipsModule
   ],
 
   exports: [
@@ -29,7 +31,8 @@ import { MatCardModule } from "@angular/material/card";
     MatRadioModule,
     MatButtonModule,
     MatSidenavModule,
-    MatCardModule
+    MatCardModule,
+    MatChipsModule
   ]
 })
 export class MaterialModule {}

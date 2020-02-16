@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
-import { multi } from "./data";
+import { multi } from "../../data";
+import * as shape from "d3-shape";
 
 @Component({
   selector: "app-sales-statistics",
@@ -23,13 +24,14 @@ export class SalesStatisticsComponent implements OnInit {
   timeline = true;
 
   colorScheme = {
-    domain: ["#5AA454", "#E44D25", "#CFC0BB", "#7aa3e5", "#a8385d", "#aae3f5"]
+    domain: ["#508FF4", "#11DCDC", "#CFC0BB", "#7aa3e5", "#a8385d", "#aae3f5"]
   };
+
+  curve = shape.curveMonotoneX;
 
   constructor() {
     Object.assign(this, { multi });
   }
 
   ngOnInit() {}
-
 }
