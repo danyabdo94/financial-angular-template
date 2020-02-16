@@ -1,16 +1,21 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
-
-import { AppRoutingModule } from "./app-routing.module";
-import { AppComponent } from "./components/app/app.component";
-import { LoginComponent } from "./components/login/login.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { FlexLayoutModule } from "@angular/flex-layout";
-import { MaterialModule } from "./material.module";
 import { FormsModule } from "@angular/forms";
+
+import { AppRoutingModule } from "./app-routing.module";
+import { MaterialModule } from "./material.module";
+import { AppComponent } from "./components/app/app.component";
+import { LoginComponent } from "./components/login/login.component";
 import { HomeComponent } from "./components/home/home.component";
 import { DashboardComponent } from "./components/dashboard/dashboard.component";
 import { SalesStatisticsComponent } from "./components/sales-statistics/sales-statistics.component";
+import { StockTrendsComponent } from "./components/stock-trends/stock-trends.component";
+import { PerformanceComponent } from "./components/performance/performance.component";
+import { RatioAnalysisComponent } from "./components/ratio-analysis/ratio-analysis.component";
+import { ConsumedBudgetComponent } from "./components/consumed-budget/consumed-budget.component";
+import { NgxChartsModule } from "@swimlane/ngx-charts";
 
 @NgModule({
   declarations: [
@@ -18,7 +23,11 @@ import { SalesStatisticsComponent } from "./components/sales-statistics/sales-st
     LoginComponent,
     HomeComponent,
     DashboardComponent,
-    SalesStatisticsComponent
+    SalesStatisticsComponent,
+    StockTrendsComponent,
+    ConsumedBudgetComponent,
+    PerformanceComponent,
+    RatioAnalysisComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +35,8 @@ import { SalesStatisticsComponent } from "./components/sales-statistics/sales-st
     BrowserAnimationsModule,
     FlexLayoutModule,
     FormsModule,
-    MaterialModule
+    MaterialModule,
+    NgxChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

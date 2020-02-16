@@ -18,7 +18,7 @@ import { MatCardModule } from "@angular/material/card";
     MatRadioModule,
     MatButtonModule,
     MatSidenavModule,
-    MatCardModule
+    MatCardModule,
   ],
 
   exports: [

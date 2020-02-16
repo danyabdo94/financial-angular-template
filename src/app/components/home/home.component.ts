@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { User } from "src/app/models/user";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-home",
@@ -9,9 +10,11 @@ import { User } from "src/app/models/user";
 export class HomeComponent implements OnInit {
   user: User = new User(1, "Scranton, PA");
   isNavOpen = true;
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
 
-  logout() {}
+  logout() {
+    this.router.navigate(["/login"]);
+  }
 }

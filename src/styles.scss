@@ -37,12 +37,19 @@ body {
       border-radius: 20px;
     }
   }
-  .mat-form-field-underline{
+
+  .mat-form-field-underline {
     height: 0px;
     opacity: 0;
   }
 }
 
-.mat-drawer-content{
+.mat-drawer-content {
   width: 100%;
+}
+
+mat-card-header {
+  div.mat-card-header-text {
+    margin: 0 0;
+  }
 }
