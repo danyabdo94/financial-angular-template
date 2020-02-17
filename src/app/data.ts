@@ -35,3 +35,14 @@ export var multi = [
     ]
   }
 ];
+
+export var single = [
+  {
+    name: "Germany",
+    value: 894
+  },
+  {
+    name: "USA",
+    value: 500
+  }
+];
