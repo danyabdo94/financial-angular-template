@@ -27,7 +27,7 @@ export class SalesStatisticsComponent implements OnInit {
     domain: ["#508FF4", "#11DCDC", "#CFC0BB", "#7aa3e5", "#a8385d", "#aae3f5"]
   };
 
-  curve = shape.curveMonotoneX;
+  curve = shape.curveNatural;
 
   constructor() {
     Object.assign(this, { multi });

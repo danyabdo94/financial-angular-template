@@ -4,15 +4,15 @@ export var multi = [
     series: [
       {
         name: "2009",
-        value: 311000000
+        value: 3110000
       },
       {
         name: "2010",
-        value: 73000000
+        value: 730000
       },
       {
         name: "2011",
-        value: 89400000
+        value: 894000
       }
     ]
   },
@@ -22,15 +22,15 @@ export var multi = [
     series: [
       {
         name: "2009",
-        value: 250000000
+        value: 2500000
       },
       {
         name: "2010",
-        value: 309000000
+        value: 3090000
       },
       {
         name: "2011",
-        value: 311000000
+        value: 3110000
       }
     ]
   }

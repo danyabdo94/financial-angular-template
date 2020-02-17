@@ -1,1 +1,28 @@
-<p>performance works!</p>
+<mat-card class="card-conainer">
+  <mat-card-header>
+    <mat-card-title>Performance</mat-card-title>
+    <mat-card-subtitle>
+      <h3>2.2628</h3>
+      <h5>25 April 2019</h5>
+    </mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content>
+    <ngx-charts-area-chart
+      [view]="view"
+      [scheme]="colorScheme"
+      [legend]="legend"
+      [showXAxisLabel]="showXAxisLabel"
+      [showYAxisLabel]="showYAxisLabel"
+      [xAxis]="xAxis"
+      [yAxis]="yAxis"
+      [xAxisLabel]="xAxisLabel"
+      [yAxisLabel]="yAxisLabel"
+      [timeline]="timeline"
+      [results]="multi"
+      [curve]="curve"
+      (select)="onSelect($event)"
+    >
+    </ngx-charts-area-chart>
+  </mat-card-content>
+</mat-card>

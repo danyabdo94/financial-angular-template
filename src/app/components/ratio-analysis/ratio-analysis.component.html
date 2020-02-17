@@ -1,0 +1,28 @@
+<mat-card style="height: 100%;">
+  <mat-card-header>
+    <mat-card-title>Sales Statistics</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <div *ngFor="let item of list">
+      <div fxLayout="row" fxLayoutAlign="space-between center" >
+        <div fxFlex="60">
+          <h4>{{item.name}}</h4>
+        </div>
+        <div fxFlex="20" style="text-align: right;">
+          <h4>{{item.value}}%</h4>
+        </div>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="space-around center">
+        <div fxFlex="100">
+          <mat-progress-bar
+            [color]="item.color"
+            [value]="item.value"
+          >
+          </mat-progress-bar>
+        </div>
+      </div>
+
+    </div>
+  </mat-card-content>
+</mat-card>

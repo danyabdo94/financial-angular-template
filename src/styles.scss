@@ -29,7 +29,7 @@ body {
   width: 100%;
 }
 
-.paddL10{
+.paddL10 {
   padding-left: 10px;
 }
 
@@ -56,4 +56,16 @@ mat-card-header {
   div.mat-card-header-text {
     margin: 0 0;
   }
+}
+
+mat-progress-bar {
+  height: 16px;
+  border-radius: 10px;
+}
+
+
+.card-conainer {
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: visible !important;
 }
