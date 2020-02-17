@@ -19,7 +19,7 @@ export class ConsumedBudgetComponent implements OnInit {
   isDoughnut = false;
 
   colorScheme = {
-    domain: ["#5AA454", "#A10A28", "#C7B42C", "#AAAAAA"]
+    domain: ["#508FF4", "#11DCDC", "#CFC0BB", "#7aa3e5", "#a8385d", "#aae3f5"]
   };
 
   ngOnInit(){}

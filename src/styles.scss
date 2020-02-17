@@ -73,3 +73,12 @@ mat-progress-bar {
 mat-card-title {
   border-bottom: grey solid 2px;
 }
+
+table.fullWidth {
+  width: 100%;
+  text-align: center;
+}
+
+table.fullWidth>thead>tr>th {
+  text-align: center;
+}

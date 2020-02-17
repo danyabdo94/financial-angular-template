@@ -21,11 +21,6 @@ export class RatioAnalysisComponent implements OnInit {
       name: "GROSS INCOME MARGIN",
       value: 80,
       color: "accent"
-    },
-    {
-      name: "ASSETS TURNOVER",
-      value: 88,
-      color: "primary"
     }
   ];
   constructor() {}

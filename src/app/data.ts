@@ -46,3 +46,23 @@ export var single = [
     value: 500
   }
 ];
+
+export var singleMulti = [
+  {
+    name: "Germany",
+    series: [
+      {
+        name: "A",
+        value: 311
+      },
+      {
+        name: "B",
+        value: 73
+      },
+      {
+        name: "C",
+        value: 894
+      }
+    ]
+  }
+];
